@@ -1,4 +1,4 @@
-<p align="center"><img src="./public/images/readme/images.jpg" width="400"></p>
+<p align="center"><img src="./public/images/readme/spike.svg" width="400"></p>
 
 ## Como instalar
 
