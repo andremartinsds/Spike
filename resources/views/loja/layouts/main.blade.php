@@ -3,16 +3,8 @@
 <html>
 
 <head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-KLL7N84');</script>
-    <!-- End Google Tag Manager -->
-
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
-    <title>Pôsteres, quadros e artes visuais | Filtrado por Mais Vendidos</title>
+    <title>Loja Virtual</title>
  
     <meta name="description" content="Quadros decorativos super fofos para alegrar suas paredes!"/>
     <!-- Bootstrap -->
@@ -33,11 +25,6 @@
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KLL7N84"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    
     @section('header')
     <nav class="white navbar navbar-default navbar-fixed-top">
             <nav>
@@ -139,16 +126,6 @@
             <div class="col-md-12 reset-for-carrousel">
 
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    {{-- <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-
-                    </ol> --}}
-
-                    <!-- Wrapper for slides -->
-
                     <div class="carousel-inner" role="listbox">
                         @php
                         $aux = 1;

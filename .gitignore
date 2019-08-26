@@ -25,3 +25,4 @@ yarn-error.log
 /public/assets/uploads/produtos/*.png
 /public/assets/uploads/produtos/*.jpeg
 /public/assets/uploads/produtos/*.jpg
+desktop.ini
