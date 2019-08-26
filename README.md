@@ -39,6 +39,16 @@ php artisan migrate
 php artisan db:seed
 
 ```
-### note que os dados de entrada no sistema estão registrados no arquivo /databases/seeds/UserTableSeeder
+### dados de entrada do sistema estão no arquivo /databases/seeds/UserTableSeeder
+
+```
+php artisan serve
+
+```
+
+### url: 127.0.0.1 acesso ao front cliente
+
+### url: 127.0.0.1/admin acesso ao admin
 
 <p>by: André Martins</p>
+
