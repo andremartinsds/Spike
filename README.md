@@ -48,6 +48,7 @@ DB_PASSWORD=SENHA
 ```
  data-public-key="Aqui"
 ```
+<p> O data-public-key e o setAccessToken são chaves passadas pelo mercado pago</p>
 
 <p> após isso rode os seguintes comandos separadamente</p>
 
