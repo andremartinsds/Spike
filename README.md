@@ -18,11 +18,11 @@ php artisan install
 php artisan key:generate
 ```
 
-### Crie sua base de dados
+<p> Crie sua base de dados</p>
 
-### copie e cole o arquivo .env.example para .env
+<p> copie e cole o arquivo .env.example para .env</p>
 
-### atribua os valores pertinentes
+<p> atribua os valores pertinentes</p>
 
 ```
 DB_CONNECTION=mysql
@@ -33,44 +33,47 @@ DB_USERNAME=USUARIO
 DB_PASSWORD=SENHA
 ```
 
-### atualmente se utiliza mercado pago com Tokenizer
+<p> atualmente se utiliza mercado pago com Tokenizer</p>
 
-### crie uma conta no mercado pago
+<p> crie uma conta no mercado pago</p>
 
-### pegue sua setAccessToken e adicione em CarrinhoController
+<p> pegue sua setAccessToken e adicione em CarrinhoController</p>
 ```
  SDK::setAccessToken("Aqui")
 ```
 
-### Adicione em cart.blade sua  data-public-key
+<p> Adicione em cart.blade sua  data-public-key</p>
 
 ```
  data-public-key="Aqui"
 ```
 
-### após isso rode os seguintes comandos separadamente
+<p> após isso rode os seguintes comandos separadamente</p>
+
 ```
 php artisan migrate
+```
 
+```
 php artisan db:seed
 
 ```
-### dados de entrada do sistema estão no arquivo /databases/seeds/UserTableSeeder
+<p> dados de entrada do sistema estão no arquivo /databases/seeds/UserTableSeeder </p>
 
 ```
 php artisan serve
 
 ```
 
-### url: 127.0.0.1 acesso ao front cliente
+<p> url: 127.0.0.1 acesso ao front cliente </p>
 
-### url: 127.0.0.1/admin acesso ao admin
+<p> url: 127.0.0.1/admin acesso ao admin </p>
 
-### Adicione webbaners
+<p> Adicione webbaners </p>
 
-### adicione categorias
+<p> adicione categorias </p>
 
-### adicione produtos para as categorias pertinentes
+<p> adicione produtos para as categorias pertinentes </p>
 
 <p>by: André Martins</p>
 
