@@ -1,0 +1,69 @@
+*{margin: 0px; padding: 0px;}
+a{text-decoration: none;}
+img{max-width: 100%;}
+.navbar-default .navbar-nav>li>a {
+    color: #000;
+}
+.dropdown-menu{
+    background: #123456;
+    border-radius: 0;
+    box-shadow: none;
+}
+.dropdown-menu>li>a{color: #FFF;}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    color: #a7a086;
+    text-decoration: none;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #FFF;
+    background-color: #123456;
+    z-index: 998;
+}
+.form-control{
+    border-radius: 44px;
+    height: 38px;
+    margin-bottom: 10px;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    
+  }
+  
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+.header .navbar-default {
+   
+}
+
+.header .navbar-default {
+    margin-bottom: 0;
+    border-bottom: none;
+    background: transparent;
+    padding-top: 15px;
+}
+
+.preco_produto {background-color: #123456;}
+
+.nome_produto {background-color: #123456;}
+
+.borda-dez-radial img{ 
+    border-radius: 10px;
+}
