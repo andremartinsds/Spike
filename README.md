@@ -38,6 +38,7 @@ DB_PASSWORD=SENHA
 <p> crie uma conta no mercado pago</p>
 
 <p> pegue sua setAccessToken e adicione em CarrinhoController</p>
+
 ```
  SDK::setAccessToken("Aqui")
 ```
