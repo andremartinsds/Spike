@@ -10,12 +10,12 @@ services:
     volumes:
       - "mysql-data:/var/lib/mysql"
     ports:
-      - "3306:3306"
+      - "${DB_PORT}:3306"
     environment:
       - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_DATABASE=mercado_pago
-      - MYSQL_USER=user
-      - MYSQL_PASSWORD=qwer1234
+      - MYSQL_DATABASE=${DB_DATABASE}
+      - MYSQL_USER=${DB_USERNAME}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
 
   app:
     image: ambientum/php:7.3-nginx
