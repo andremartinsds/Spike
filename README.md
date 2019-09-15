@@ -66,10 +66,64 @@ php artisan db:seed
 php artisan serve
 
 ```
-
 <p> url: 127.0.0.1 acesso ao front cliente </p>
 
 <p> url: 127.0.0.1/admin acesso ao admin </p>
+
+## Setup com Docker
+
+> Caso use Mac ou Windows é preciso ter o [Docker Desktop](https://www.docker.com/products/docker-desktop) instalado (se usa Linux acesse este [link](https://docs.docker.com/install/linux/docker-ce/ubuntu/) para maiores informações).
+
+Copie e cole o arquivo .env.example para .env
+
+Acesse a pasta raiz do projeto:
+
+```
+cd /spike
+
+```
+Suba os serviços com o comando:
+
+```
+docker-compose up
+
+```
+Serão criados dois containers:
+
+* **mercado-pago-mysql:** contém o MySql
+* **mercado-pago-app:** contém os arquivos da aplicação
+
+E dois serviços:
+
+* **app:** serviço da aplicação
+* **mysql:** serviço do MySql
+
+Em outro terminal acesse a pasta raiz e execute os comandos abaixo:
+
+```
+# instalando as dependências:
+docker-compose run app composer install
+
+# gerando a chave:
+docker-compose run app php artisan key:generate
+
+# executando as migrates:
+docker-compose run app php artisan migrate
+
+# executando as seeds:
+docker-compose run app php artisan db:seeds
+
+```
+
+Acesse a aplicação pela url [http://localhost](http://localhost)
+
+Para parar os serviços basta fazer:
+
+```
+docker-compose down
+
+```
+## Tarefas
 
 <p> Adicione webbaners </p>
 
@@ -78,4 +132,3 @@ php artisan serve
 <p> adicione produtos para as categorias pertinentes </p>
 
 <p>by: André Martins</p>
-
