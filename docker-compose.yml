@@ -1,0 +1,26 @@
+version: "3.7"
+
+volumes:
+  mysql-data:
+
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: mercado-pago-mysql
+    volumes:
+      - "mysql-data:/var/lib/mysql"
+    ports:
+      - "${DB_PORT}:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=${DB_DATABASE}
+      - MYSQL_USER=${DB_USERNAME}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+
+  app:
+    image: ambientum/php:7.3-nginx
+    container_name: mercado-pago-app
+    volumes:
+      - ".:/var/www/app"
+    ports:
+      - "80:8080"
