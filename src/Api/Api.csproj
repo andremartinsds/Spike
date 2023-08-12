@@ -11,17 +11,22 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="automapper.extensions.microsoft.dependencyinjection" Version="12.0.1" />
-        <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.16" />
-        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.16" />
-        <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.16" />
-        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.16" />
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.16" />
-        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.13" />
+        <PackageReference Include="automapper.extensions.microsoft.dependencyinjection" Version="12.0.1"/>
+        <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.16"/>
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.16"/>
+        <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.16"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.16"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.16"/>
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.13"/>
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Data\Data.csproj" />
+        <ProjectReference Include="..\Data\Data.csproj"/>
     </ItemGroup>
+
+    <ItemGroup>
+        <Folder Include="Migrations\"/>
+    </ItemGroup>
+
 
 </Project>

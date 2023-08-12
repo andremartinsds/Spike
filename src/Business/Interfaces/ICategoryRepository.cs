@@ -4,5 +4,4 @@ namespace Business.Interfaces;
 
 public interface ICategoryRepository : IBaseRepository<Category>
 {
-    
 }

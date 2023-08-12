@@ -11,6 +11,8 @@ public class DataDbContext : DbContext
         ChangeTracker.AutoDetectChangesEnabled = false;
     }
 
+    public DbSet<Organization> Organizations { get; set; }
+    public DbSet<Seller> Sellers { get; set; }
     public DbSet<Category> Categories { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

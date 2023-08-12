@@ -15,11 +15,16 @@ public abstract class BaseRepository<T> : IBaseRepository<T> where T : Entity
         DbContext = dataDbContext;
         DbSet = DbContext.Set<T>();
     }
-    
+
     public async Task Add(T entity)
     {
         DbSet.Add(entity);
         await SaveChanges();
+    }
+
+    public void Dispose()
+    {
+        DbContext.Dispose();
     }
 
     public async Task<T> FindById(Guid id)
@@ -31,7 +36,7 @@ public abstract class BaseRepository<T> : IBaseRepository<T> where T : Entity
     {
         return await DbSet.ToListAsync();
     }
-    
+
     public async Task<List<T>> FindWithPagination(int skip, int take = 10)
     {
         return await DbSet.Skip(skip).Take(take).ToListAsync();
@@ -47,11 +52,6 @@ public abstract class BaseRepository<T> : IBaseRepository<T> where T : Entity
     {
         DbSet.Remove(entity);
         await SaveChanges();
-    }
-
-    public void Dispose()
-    {
-        DbContext.Dispose();
     }
 
     public async Task<int> SaveChanges()
